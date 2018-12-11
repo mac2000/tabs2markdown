@@ -1,7 +1,5 @@
 chrome.browserAction.onClicked.addListener(() => {
   chrome.tabs.query({ currentWindow: true }, tabs => {
-    tabs = tabs.filter(({ url }) => url.indexOf("google.com") === -1 && url.indexOf("search") === -1);
-
     const el = document.createElement("textarea");
     el.value = tabs
       .map(({ title, url }) => ({ title, url }))
