@@ -1,0 +1,8 @@
+body {
+  display: grid;
+  grid-row-gap: 8px;
+}
+
+button {
+  width: 8em;
+}

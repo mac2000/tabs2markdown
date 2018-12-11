@@ -1,18 +1,16 @@
 {
   "name": "tabs2markdown",
-  "version": "1.0",
+  "version": "2.0",
   "description": "Copies all open tabs into mardkown list of links",
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
   "icons": {
     "16": "images/md16.png",
     "32": "images/md32.png",
     "48": "images/md48.png",
     "128": "images/md128.png"
   },
-  "browser_action": {},
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
   "permissions": ["clipboardWrite", "tabs", "notifications"],
   "manifest_version": 2
 }
